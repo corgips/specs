@@ -31,20 +31,20 @@ Instead of a multi-faceted protocol, Corgi is a garden — people can grow new t
 ## 🏁 Getting Started
 
 ### 👩💻 Developers
-- Clone the [Corgi Spec Garden](https://github.com/corgips/specs)
-- Pick a spec and try implementing it in your stack
-- Publish your client/relay manifest (see `C-COMPAT-001`)
+- Fork and star the [Corgi Spec Garden](https://github.com/corgips/specs)
+- Pick a spec and try implementing it in a new branch on your project
+- Publish your client/relay manifest (see `C-COMPAT-001`) _somewhere_
 - Contribute new event types or tools
 
 ### ✍️ Spec Authors
 - Read `C-SPEC-001` for how to propose a new spec
-- Use our template + `generate-spec-id.py` tool
+- Use our `generate-spec-id.py` tool
 - Fork the repo, add your spec, open a pull request
 
 ### 🌱 Community Members
-- Join discussions on new specs, features, or vibes
+- Join discussions on new specs, problems, and potential features.
 - Propose UX ideas or client behaviors
-- Translate specs, organize hackathons, or remix prototypes
+- Translate specs, organize hackathons, or test prototypes
 
 ---
 
