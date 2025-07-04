@@ -54,7 +54,7 @@ Each spec is a standalone markdown file in the `specs/` directory. Below is an i
 ---
 
 ## ✍️ Proposing a New Spec
-See [./spec/c_spec_001.md](./spec/c_spec_001.md)
+See [./spec/c_spec_001.md](./specs/c_spec_001.md)
 
 ---
 
