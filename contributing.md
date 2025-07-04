@@ -8,7 +8,7 @@ Thanks for your interest in contributing to Corgi! Whether you're writing specs,
 
 ### 🔧 Proposing a New Spec
 
-See [[./specs/c_spec_001.md]]
+See [./specs/c_spec_001.md](./specs/c_spec_001.md)
 
 We welcome informational and experimental specs.
 
