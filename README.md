@@ -17,8 +17,8 @@ Each spec is a standalone markdown file in the `specs/` directory. Below is an i
 
 | ID             | Title                               | Role                                                                                    |
 | -------------- | ----------------------------------- | --------------------------------------------------------------------------------------- |
-| [C-EVENT-001](./specs/c_event_001.md) | Event Schema | Defines the basic unit of content exchange: signed, timestamped events.                 |
-| [C-ID-001](./specs/c_id_001.md) | Delegated Identity & Key Management | Outlines how identities are derived from wallet-compatible seeds and delegation chains. |
+| [C-EVENT-001](./specs/c_event_001.md) | Event Schema | Defines the basic unit of content exchange: optionally signed, timestamped events.                 |
+| [C-ID-001](./specs/c_id_001.md) | Delegated Identity & Key Management | Outlines identities that can be derived from wallet-compatible seeds and use delegation chains. |
 | [C-DID-001](./specs/c_did_001.md) | Human-Readable Identity via DID | Describes how DID documents link keys to user-friendly names like `@alice.vibes`. |
 | [C-ENC-001](./specs/c_enc_001.md) | Event Encoding Formats | Specifies allowed serialization formats (e.g. JSON, MessagePack, CBOR). |
 | [C-COMPAT-001](./specs/c_compat_001.md) | Compatibility Manifest | Defines how clients and relays declare supported features and spec versions. |
