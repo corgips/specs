@@ -54,9 +54,11 @@ Each spec is a standalone markdown file in the `specs/` directory. Below is an i
 ---
 
 ## ✍️ Proposing a New Spec
-See [[./spec/c_spec_001.md`]]
+See [./spec/c_spec_001.md](./spec/c_spec_001.md)
 
 ---
 
 ## 🔐 License
-All specs are published under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+
+To the extent possible under law, the authors of this Corgi spec have waived all copyright and related or neighboring rights to this work.
