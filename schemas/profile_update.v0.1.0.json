@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corgi.org/schemas/profile_update.v0.1.0.json",
+  "title": "Corgi Profile Update Event",
+  "description": "An event representing an update to an identity profile, such as name or avatar.",
+  "type": "object",
+  "required": ["id", "type", "author", "created_at", "content"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the event."
+    },
+    "type": {
+      "type": "string",
+      "const": "spec:@corgi/event/v0.1.0#profile_update",
+      "description": "Must match the type defined in C-EVENT-001."
+    },
+    "author": {
+      "type": "string",
+      "description": "The DID or public identity of the user."
+    },
+    "created_at": {
+      "type": "integer",
+      "description": "Unix timestamp of the profile update."
+    },
+    "content": {
+      "type": "object",
+      "description": "Updated profile fields.",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "User's display name"
+        },
+        "about": {
+          "type": "string",
+          "description": "Short bio or description"
+        },
+        "picture": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to user's profile picture"
+        },
+        "banner": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional profile banner image"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional website or blog URL"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sig": {
+      "type": "string",
+      "description": "Optional signature of the profile update"
+    }
+  },
+  "additionalProperties": false
+}
+

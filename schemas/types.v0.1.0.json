@@ -1,0 +1,40 @@
+{
+  "types": [
+    {
+      "type": "spec:@corgi/event/v0.1.0#note",
+      "kind": 1,
+      "title": "Note",
+      "description": "A plain text post, similar to a tweet or status update."
+    },
+    {
+      "type": "spec:@corgi/event/v0.1.0#profile_update",
+      "kind": 2,
+      "title": "Profile Update",
+      "description": "An update to identity metadata like name, avatar, or bio."
+    },
+    {
+      "type": "spec:@corgi/event/v0.1.0#reaction",
+      "kind": 3,
+      "title": "Reaction",
+      "description": "A lightweight emoji or symbol response to another event."
+    },
+    {
+      "type": "spec:@corgi/event/v0.1.0#boost",
+      "kind": 6,
+      "title": "Boost",
+      "description": "A repost or share of another event without additional commentary."
+    },
+    {
+      "type": "spec:@corgi/event/v0.1.0#zap",
+      "kind": 30000,
+      "title": "Zap",
+      "description": "A microtip or payment event in response to content. Optional."
+    }
+  ],
+  "meta": {
+    "version": "0.1.0",
+    "generated_at": "2025-06-23T18:00:00Z",
+    "source": "https://corgi.org/specs"
+  }
+}
+

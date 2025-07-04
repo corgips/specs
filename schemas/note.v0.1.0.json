@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corgi.org/schemas/note.v0.1.0.json",
+  "title": "Corgi Note Event",
+  "description": "A plain text social post event.",
+  "type": "object",
+  "required": ["id", "type", "author", "created_at", "content"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for the event (e.g., hash)."
+    },
+    "type": {
+      "type": "string",
+      "const": "spec:@corgi/event/v0.1.0#note",
+      "description": "Must match the type defined in C-EVENT-001."
+    },
+    "author": {
+      "type": "string",
+      "description": "The public identity or DID of the event author."
+    },
+    "created_at": {
+      "type": "integer",
+      "description": "Unix timestamp of creation."
+    },
+    "content": {
+      "type": "string",
+      "description": "The main body of the post, plain text only."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "array", "items": { "type": "string" } },
+      "description": "Optional Nostr-style tags."
+    },
+    "sig": {
+      "type": "string",
+      "description": "Optional cryptographic signature of the event."
+    }
+  },
+  "additionalProperties": false
+}
+

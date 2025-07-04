@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corgi.org/schemas/reaction.v0.1.0.json",
+  "title": "Corgi Reaction Event",
+  "description": "A lightweight emoji or symbolic response to another event.",
+  "type": "object",
+  "required": ["id", "type", "author", "created_at", "content", "tags"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "A unique identifier for the event."
+    },
+    "type": {
+      "type": "string",
+      "const": "spec:@corgi/event/v0.1.0#reaction",
+      "description": "Must match the type defined in C-EVENT-001."
+    },
+    "author": {
+      "type": "string",
+      "description": "The public identity or DID of the event author."
+    },
+    "created_at": {
+      "type": "integer",
+      "description": "Unix timestamp of creation."
+    },
+    "content": {
+      "type": "string",
+      "description": "Emoji or symbolic reaction (e.g., '❤️', '🔥', '👀')."
+    },
+    "tags": {
+      "type": "array",
+      "description": "Must include a tag referencing the target event being reacted to.",
+      "items": {
+        "type": "array",
+        "items": [
+          { "type": "string", "const": "e" },
+          { "type": "string" }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 1
+    },
+    "sig": {
+      "type": "string",
+      "description": "Optional cryptographic signature."
+    }
+  },
+  "additionalProperties": false
+}
+
